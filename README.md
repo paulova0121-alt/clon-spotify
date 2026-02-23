@@ -23,8 +23,6 @@ El diseño de referencia está en `/design/spotify-prototype.pdf`. Revísalo ant
 
 Consulta el archivo `style-guide.md` para la paleta de colores, tipografías y tamaños de referencia.
 
----
-
 ## Cómo empezar: fork y clonado
 
 Este repositorio es la plantilla de partida. **No trabajes directamente sobre él.** Sigue estos pasos antes de escribir ningún código:
@@ -48,9 +46,7 @@ Este repositorio es la plantilla de partida. **No trabajes directamente sobre é
 
 4. Trabaja sobre tu copia. Los cambios que hagas y subas con `git push` quedarán en **tu repositorio**, no en el original.
 
-> Cuando termines, comparte la URL de tu repositorio y la URL del proyecto desplegado con el formador.
-
----
+> Cuando termines, comparte la URL de tu repositorio y la URL del proyecto desplegado mediante la tarea de moodle.
 
 ## Instrucciones
 
@@ -215,8 +211,6 @@ El diseño debe adaptarse correctamente al menos en los siguientes breakpoints:
 
 Prueba el resultado en Chrome DevTools activando la vista de dispositivo.
 
----
-
 ## Commits: trabaja de forma atómica
 
 Este ejercicio también se evaluará por cómo usas git, no solo por el resultado final. Desarrolla el hábito de hacer commits frecuentes y bien descritos desde el primer día.
@@ -266,8 +260,6 @@ git commit -m "Añadir media query para menú desktop"
 - Al final de cada sesión de trabajo, aunque no hayas terminado
 
 No esperes a tener todo listo para hacer el primer commit. Un historial con muchos commits pequeños es mucho más útil que uno con tres commits enormes.
-
----
 
 ## Proceso sugerido
 
