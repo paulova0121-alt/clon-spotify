@@ -1,0 +1,11 @@
+*{
+    background-color:rgb(255, 255, 255) ;
+}
+@font-face {
+    font-family:"Monserrat";
+    src: url(https://fonts.google.com/specimen/Montserrat);
+  } 
+   @font-face {
+        font-family: "DM Sans";
+        src: url(https://fonts.google.com/specimen/DM+Sans);
+    }
