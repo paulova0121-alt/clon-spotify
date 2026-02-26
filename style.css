@@ -1,11 +1,52 @@
-*{
-    background-color:rgb(255, 255, 255) ;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-@font-face {
-    font-family:"Monserrat";
-    src: url(https://fonts.google.com/specimen/Montserrat);
-  } 
-   @font-face {
-        font-family: "DM Sans";
-        src: url(https://fonts.google.com/specimen/DM+Sans);
-    }
+
+   @import url(https://fonts.google.com/specimen/Montserrat);
+   @import url(https://fonts.google.com/specimen/DM+Sans);
+    :root {
+        /*COLORES/*
+
+  /* Marca */
+  --color-brand: #1db954; /* Verde Spotify */
+  --color-brand-hover: #1ed760; /* Verde hover */
+
+  /* Fondos */
+  --color-bg-dark: #191414; /* Negro Spotify */
+  --color-bg-secondary: #282828; /* Gris oscuro tarjetas */
+
+  /* Textos */
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #b3b3b3;
+  --color-text-muted: #6a6a6a;
+
+  /*ESPACIADO/*
+
+  /* Bordes / separadores */
+  --color-border: #333333;
+  --spacing-xs: 0.25rem; /*  4px */
+  --spacing-sm: 0.5rem; /*  8px */
+  --spacing-md: 1rem; /* 16px */
+  --spacing-lg: 2rem; /* 32px */
+  --spacing-xl: 4rem; /* 64px */
+  --spacing-2xl: 6rem; /* 96px */
+/*Bordes y radios*/
+    --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-full: 500px; /* Para botones en píldora */
+  }
+
+nav{
+
+}
+.hero{
+
+}
+.card-1{
+    
+}
+.card-2{
+
+}
