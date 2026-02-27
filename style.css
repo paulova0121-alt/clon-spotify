@@ -34,13 +34,13 @@
   --radius-md: 8px;
   --radius-full: 500px; /* Para botones en píldora */
   /*Fuente*/
---font-primary:"Montserrat", "DN Sans", sans-serif;
+--font-primary:"Montserrat", "DM Sans", sans-serif;
   }
 
 body{
  font-family: var(--font-primary);
     color: var(--color-text-primary);
-    background-color: var(--color-text-primary)
+    background-color: var(--color-text-primary);
     line-height: 1.5;
 }
 img{
@@ -52,31 +52,52 @@ a {
   color: inherit;
 }
 .header{ 
-    display: flex;
-background-color: var(--color-text-primary);
-justify-content: space-between;
-padding: var(--radius-md);
-align-items: center;
-border-bottom: 1px solid var(--color-border);
+     display: flex;
+      background-color: var(--color-text-primary);
+     justify-content: space-between;
+     padding: var(--spacing-md);
+     align-items: center;
+     border-bottom: 1px solid var(--color-border);
 }
 .header__logo{
     height: 32px;
     width: auto;
+  
+}  .header__menu-btn{
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--color-bg-dark);
+    z-index: 100;
 }
-.header_nav{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-}
-.nav_link{
-    color: var(--color-bg-secondary);
-    font-size: 0,75rem;
-    font-weight: 500;
-    white-space: nowrap;
-    padding: 2px 4px;
 
+.header__nav{
+     display: none;
+     flex-direction: column;
+     position: absolute;
+      top: 70px;
+      left:0%;
+      width: 100%;
+      background-color: var(--color-text-primary);
+      padding: var(--spacing-lg);
+      box-shadow: 0 4px 6px rgba(0,0,0,0,1)green, blue, alpha);
+    z-index: 99;
+}.header__nav.show{
+    display: flex;
 }
-.nav_link--login{
+.header__nav .nav__link {
+  padding: var(--spacing-md);
+  border-bottom: 1px solid var(--color-border);
+  text-align: center;
+  font-size: 1.2rem;
+ }
+.header__nav .nav__link:last-child {
+  border-bottom: none;
+}
+
+.nav__link--login{
     color: var(--color-brand);
 font-weight: 700;
   border: 1px solid var(--color-brand);
