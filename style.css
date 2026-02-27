@@ -33,24 +33,31 @@
     --radius-sm: 4px;
   --radius-md: 8px;
   --radius-full: 500px; /* Para botones en píldora */
+  /*Fuente*/
+--font-primary:"Montserrat", "DN Sans", sans-serif;
   }
 
 body{
-    font-family: "Monserrat", "DM Sans", sans-serif;
+ font-family: var(--font-primary);
     color: var(--color-text-primary);
-    background-color: var(--color-bg-dark);
-    line-height: 1,5;
+    background-color: var(--color-text-primary)
+    line-height: 1.5;
 }
 img{
     max-width: 100%;
     display: block;
 }
-
-header{ 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.header{ 
+    display: flex;
 background-color: var(--color-text-primary);
 justify-content: space-between;
 padding: var(--radius-md);
 align-items: center;
+border-bottom: 1px solid var(--color-border);
 }
 .header__logo{
     height: 32px;
@@ -58,24 +65,31 @@ align-items: center;
 }
 .header_nav{
     display: flex;
-    gap: var(--radius-sm);
     flex-wrap: wrap;
-    justify-content: end;
+    justify-content: flex-end;
 }
 .nav_link{
     color: var(--color-bg-secondary);
     font-size: 0,75rem;
     font-weight: 500;
-    white-space: nowrap
+    white-space: nowrap;
     padding: 2px 4px;
 
 }
+.nav_link--login{
+    color: var(--color-brand);
+font-weight: 700;
+  border: 1px solid var(--color-brand);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+}
+/*-----------------HERO-----------------------*/
 .hero{
 
 }
 .features-primary{
     background-color: var(--color-text-primary);
-    
+  
     
 }
 .features-secondary{
