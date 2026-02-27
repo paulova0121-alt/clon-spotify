@@ -3,9 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-   @import url(https://fonts.google.com/specimen/Montserrat);
-   @import url(https://fonts.google.com/specimen/DM+Sans);
     :root {
         /*COLORES*/
 
@@ -37,17 +34,30 @@
   --radius-md: 8px;
   --radius-full: 500px; /* Para botones en píldora */
   }
+
+body{
+    font-family: "Monserrat", "DM Sans", sans-serif;
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-dark);
+    line-height: 1,5;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
 .header__logo{
     height: 32px;
 }
 header{ 
-background-color: #ffffff;
+background-color: var(--color-text-primary)
 
 }
 .hero{
 
 }
 .features-primary{
+    background-color: var(--color-text-primary);
+    
     
 }
 .features-secondary{
