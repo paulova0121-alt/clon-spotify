@@ -36,7 +36,7 @@ El contenido debe ser responsive y funcionar correctamente en cualquier tamaño 
 Spotify usa la fuente propietaria _Circular_. Como alternativa libre, puedes usar cualquiera de estas opciones enlazando desde Google Fonts:
 
 - [Montserrat](https://fonts.google.com/specimen/Montserrat) — muy similar en proporciones y peso
-- [DM Sans](https://fonts.google.com/specimen/DM+Sans) — cercana al estilo geométrico de Circular
+- [DM Sans](https://fonts.google.c om/specimen/DM+Sans) — cercana al estilo geométrico de Circular
 
 ```css
 :root {

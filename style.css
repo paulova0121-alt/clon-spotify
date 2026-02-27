@@ -45,11 +45,29 @@ img{
     max-width: 100%;
     display: block;
 }
+
+header{ 
+background-color: var(--color-text-primary);
+justify-content: space-between;
+padding: var(--radius-md);
+align-items: center;
+}
 .header__logo{
     height: 32px;
+    width: auto;
 }
-header{ 
-background-color: var(--color-text-primary)
+.header_nav{
+    display: flex;
+    gap: var(--radius-sm);
+    flex-wrap: wrap;
+    justify-content: end;
+}
+.nav_link{
+    color: var(--color-bg-secondary);
+    font-size: 0,75rem;
+    font-weight: 500;
+    white-space: nowrap
+    padding: 2px 4px;
 
 }
 .hero{
