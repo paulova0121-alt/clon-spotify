@@ -1,140 +1,102 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify Clone</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-  
-  <body>
-   <header class="header">
-    <img
-        src="assets/spotify-logo.png"
-        alt="Spotify logo"
-        class="header_logo"
-    />
-    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <header class="header">
+        <img src="assets/spotify-logo.png" alt="Spotify logo" class="header_logo" />
+        
+        <button class="hamburger" id="hamburgerBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <nav class="header_nav" id="nav">
+            <a href="#" class="nav_link">Premium</a>
+            <a href="#" class="nav_link">Discover</a>
+            <a href="#" class="nav_link">Help</a>
+            <a href="#" class="nav_link">Download</a>
+        </nav>
+    </header>
 
-    <button class="hamburger" id="hamburgerBtn">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-    
-    <nav class="header_nav" id="nav">
-        <a href="#" class="nav_link">Premium</a>
-        <a href="#" class="nav_link">Discover</a>
-        <a href="#" class="nav_link">Help</a>
-        <a href="#" class="nav_link">Download</a>
-        <a href="#" class="nav_link">Log in</a>
-    </nav>
-</header>
     <main>
-      <!-- HERO SECTION -->
-      <section class="hero">
-        <h1 class="hero_title">Music for everyone.</h1>
-        <p class="hero_text">
-          Spotify is now free on mobile, tablet and computer. Listen to the
-          right music, wherever you are.
-        </p>
-        <img src="assets/landing.jpg" alt="landing" class="hero_image" />
-      </section>
-
-      <!-- FEATURES PRIMARY -->
-      <section class="features-primary">
-        <h2 class="features_primary_title">What’s on Spotify?</h2>
-
-        <div class="features_primary_grid">
-          <!--MILLION OF SONGS-->
-          <img
-            src="assets/music-icon.png"
-            alt="music icon"
-            class="feature_card_icon"
-          />
-          <h3 class="feature_card_title">Millions of Songs</h3>
-          <p class="feature_card_text">
-            There are millions of songs on Spotify
-          </p>
-
-          <!--HD MUSIC-->
-          <img
-            src="assets/high-quality-icon.png"
-            alt="high quality icon"
-            class="feature_card_icon"
-          />
-          <h3 class="feature_card_title">HD Music</h3>
-          <p class="feature_card_text">
-            Listen to music as if you were listening live
-          </p>
-
-          <!--STREAM EVERYWHERE-->
-          <img
-            src="assets/devices-icon.png"
-            alt="devices icon"
-            class="feature_card_icon"
-          />
-          <h3 class="feature_card_title">Stream Everywhere</h3>
-          <p class="feature_card_text">
-            Stream music on your smartphone, tablet or computer
-          </p>
-        </div>
-      </section>
-
-      <!-- FEATURES SECONDARY -->
-      <section class="features-secondary">
-        <h2 class="features-secondary_title">It’s as yeezy as Kanye West.</h2>
-
-        <div class="features-secondary_grid">
-          <div class="features-secondary_content">
-            <div class="feature-item">
-              <h3 class="feature_item_title">Search</h3>
-              <p class="feature_item_text">
-                Know what you want to listen to? Just search and hit play.
-              </p>
+        <!-- HERO SECTION --->
+        <section class="hero">
+            <div class="hero_content">
+                <h1 class="hero_title">Music for everyone.</h1>
+                <p class="hero_text">
+                    Spotify is now free on mobile, tablet and computer.<br>
+                    Listen to the right music, wherever you are.
+                </p>
             </div>
+        </section>
 
-            <div class="feature-item">
-              <h3 class="feature_item_title">Browse</h3>
-              <p class="feature_item_text">
-                Check out the latest charts, brand new releases and great
-                playlists for right now.
-              </p>
+        <!-- FEATURES PRIMARY --->
+        <section class="features-primary">
+            <h2 class="features_primary_title">What's on Spotify?</h2>
+
+            <div class="features_primary_grid">
+                <div class="feature_card">
+                    <img src="assets/music-icon.png" alt="Music icon" class="feature_card_icon" />
+                    <h3 class="feature_card_title">Millions of Songs</h3>
+                    <p class="feature_card_text">There are millions of songs on Spotify</p>
+                </div>
+
+                <div class="feature_card">
+                    <img src="assets/high-quality-icon.png" alt="HD Music icon" class="feature_card_icon" />
+                    <h3 class="feature_card_title">HD Music</h3>
+                    <p class="feature_card_text">Listen to music as if you were listening live</p>
+                </div>
+
+                <div class="feature_card">
+                    <img src="assets/devices-icon.png" alt="Devices icon" class="feature_card_icon" />
+                    <h3 class="feature_card_title">Stream Everywhere</h3>
+                    <p class="feature_card_text">Stream music on your smartphone, tablet or computer</p>
+                </div>
             </div>
+        </section>
 
-            <div class="feature-item">
-              <h3 class="feature_item_title">Discover</h3>
-              <p class="feature_item_text">
-                Enjoy new music every Monday with your own personal playlist. Or
-                sit back and enjoy Radio.
-              </p>
+        <!-- FEATURES SECONDARY --->
+        <section class="features-secondary">
+            <div class="features-secondary_container">
+                <div class="features-secondary_content">
+                    <h2 class="features-secondary_title">It's as yeezy as Kanye West.</h2>
+                    
+                    <div class="feature_item">
+                        <h3 class="feature_item_title">Search</h3>
+                        <p class="feature_item_text">Know what you want to listen to? Just search and hit play.</p>
+                    </div>
+
+                    <div class="feature_item">
+                        <h3 class="feature_item_title">Browse</h3>
+                        <p class="feature_item_text">Check out the latest charts, brand new releases and great playlists for right now.</p>
+                    </div>
+
+                    <div class="feature_item">
+                        <h3 class="feature_item_title">Discover</h3>
+                        <p class="feature_item_text">Enjoy new music every Monday with your own personal playlist. Or sit back and enjoy Radio.</p>
+                    </div>
+                </div>
+
+                <div class="features-secondary_media">
+                    <img src="assets/spotify-icon-white.png" alt="Spotify icon" class="features-secondary_icon" />
+                    <img src="assets/spotify-app.jpg" alt="Spotify app screenshot" class="features-secondary_image" />
+                </div>
             </div>
-          </div>
-
-          <div class="features_secondary_media">
-            <img
-              src="assets/spotify-icon-white.png"
-              alt="Spotify icon"
-              class="features-secondary_icon"
-            />
-            <img
-              src="assets/spotify-app.jpg"
-              alt="Spotify app screenshot"
-              class="features_secondary_image"
-            />
-          </div>
-        </div>
-      </section>
+        </section>
     </main>
 
     <footer class="footer">
-      <!-- Footer content will go here -->
+        <!-- Footer content -->
     </footer>
     <script src="menu.js"></script>
-  </body>
+</body>
 </html>
