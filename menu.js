@@ -1,11 +1,31 @@
-const nav= document.querySelector("#nav");
-const open-burguer=document.querySelector("#open-burguer");
-const close-burguer=document.querySelector("#close-burguer");
 
-open-burguer.addEventListener("click", ()=>{
-    nav.classList.add("visible");
+function toggleMenu() {
+    nav.classList.toggle("visible");
+    hamburgerBtn.classList.toggle("active");
+    
+    if (nav.classList.contains("visible")) {
+        document.body.style.overflow = "hidden";
+    } else {
+        document.body.style.overflow = "auto";
+    }
 }
 
-close-burguer.addEventListener("click", ()=>{
-    nav.classList.remove("visible"); 
-}
+// Evento del botón hamburguesa
+hamburgerBtn.addEventListener("click", toggleMenu);
+
+// Cerrar menú al hacer clic en un enlace
+const navLinks = document.querySelectorAll(".nav_link");
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        if (nav.classList.contains("visible")) {
+            toggleMenu();
+        }
+    });
+});
+
+// Cerrar con tecla ESC
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && nav.classList.contains("visible")) {
+        toggleMenu();
+    }
+});
