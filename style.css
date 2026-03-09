@@ -203,7 +203,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 90%;
     text-align: center;
 }
 
@@ -266,7 +266,7 @@ a {
 }
 
 /* RESPONSIVE MÓVIL */
-@media screen and (max-width: 558px) {
+@media screen and (max-width: 460px) {
     .header_nav {
         display: none;
         position: fixed;
@@ -312,6 +312,7 @@ a {
     .features-secondary_container {
         grid-template-columns: 1fr;
         text-align: center;
+        width: 100%;
     }
     
   
