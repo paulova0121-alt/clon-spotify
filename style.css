@@ -48,7 +48,7 @@ img {
     display: block;
 }
 
-/* ===== ESTILOS MÓVIL (BASE) ===== */
+/* ===== MÓVIL (BASE) ===== */
 .header { 
     display: flex;
     background-color: var(--color-bg-dark);
@@ -241,7 +241,7 @@ img {
 }
 
 .features-secondary_title {
-    font-size: 2rem; /* Reducido para móvil */
+    font-size: 2rem;
     margin: 10px;
     font-weight: 700;
     color: var(--color-text-primary);
@@ -249,14 +249,14 @@ img {
 
 .sub_bar_secondary {
     height: 2px;
-    width: 280px; /* Reducido para móvil */
+    width: 400px;
     background-color: var(--color-text-primary);
     margin-bottom: var(--spacing-lg);
 }
 
 .feature_item {
     margin-bottom: var(--spacing-lg);
-    text-align: left; /* Mejor para móvil */
+    text-align: left;
 }
 
 .feature_item_title {
@@ -272,24 +272,29 @@ img {
     line-height: 1.6;
 }
 
+/* ===== CONTENEDOR DE MEDIA SECONDARY ===== */
 .features-secondary_media {
-    position: relative;
     display: flex;
+    flex-direction: row;  /* Coloca los elementos en fila */
+    align-items: center;   /* Centra verticalmente */
     justify-content: center;
-    order: -1; /* La imagen arriba en móvil */
+    gap: var(--spacing-md); /* Espacio entre imagen e icono */
+    order: -1; 
+    width: 100%;
 }
 
-.features-secondary_app{
+/* App screenshot - oculta en móvil */
+.features-secondary_app {
     display: none;
+    max-width: 200px; /* Tamaño controlado para móvil cuando se muestre */
 }
 
+/* Icono - visible en móvil pero AL LADO de la imagen */
 .features-secondary_icon {
     max-width: 3rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
+    display: block; /* Visible en móvil */
+    position: static; /* IMPORTANTE: quitamos el absolute */
+    transform: none;  /* Quitamos la transformación */
 }
 
 /* ===== ESTILOS TABLET ===== */
@@ -307,21 +312,32 @@ img {
     }
     
     .features_primary_grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablet */
+        grid-template-columns: repeat(2, 1fr);
     }
     
     .features-secondary_container {
-        grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablet */
+        grid-template-columns: repeat(2, 1fr);
     }
-    .features-secondary_app{
-        width: auto;
+    
+    /* Mostramos la app en tablet */
+    .features-secondary_app {
+        display: block;
+        max-width: 250px;
     }
+    
+    /* Icono se mantiene al lado */
+    .features-secondary_icon {
+        max-width: 3.5rem;
+    }
+    
     .features-secondary_media {
-        order: 0; /* Restauramos orden normal */
+        order: 0; 
+        justify-content: flex-start; /* Alinea a la izquierda */
     }
     
     .sub_bar_secondary {
         width: 400px;
+       
     }
 }
 
@@ -332,10 +348,6 @@ img {
         display: none;
     }
     
-   .features-secondary_app{
-        width: auto;
-    }
-
     .header_nav {
         display: flex;
         position: static;
@@ -346,12 +358,20 @@ img {
         box-shadow: none;
     }
     
-    .header_nav.visible {
-        display: flex; /* Mantenemos pero no afecta */
+    /* App más grande en desktop */
+    .features-secondary_app {
+        display: block;
+        max-width: 300px;
     }
     
-    .nav_link:hover {
-        color: var(--color-brand);
+    /* Icono más grande en desktop */
+    .features-secondary_icon {
+        max-width: 4rem;
+    }
+    
+    .features-secondary_media {
+        justify-content: flex-start;
+        gap: var(--spacing-lg); /* Más espacio en desktop */
     }
     
     .hero_title {
@@ -371,7 +391,7 @@ img {
     }
     
     .features_primary_grid {
-        grid-template-columns: repeat(3, 1fr); /* 3 columnas en desktop */
+        grid-template-columns: repeat(3, 1fr);
         gap: var(--spacing-xl);
     }
     
@@ -392,27 +412,20 @@ img {
     }
     
     .feature_item {
-        text-align: center; /* Centrado en desktop */
+        text-align: center;
     }
     
     .feature_item_title {
         font-size: 1.5rem;
     }
-    
-    .features-secondary_icon {
-        max-width: 4rem;
-       
-    }
 }
 
 /* ===== ESTILOS DESKTOP GRANDE ===== */
 @media (min-width: 1440px) {
-    .container {
-        max-width: 1400px;
-        margin: 0 auto;
+    .features-secondary_app {
+        max-width: 350px;
     }
-     .features-secondary_app{
-        width: auto;
-        display: block;
+    .features-secondary_icon {
+        max-width: 4.5rem;
     }
 }
